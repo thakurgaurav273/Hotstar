@@ -1,3 +1,4 @@
+import React from 'react'
 import myvideo from "../baghi.mp4";
 export default function Video(){
     return(<>

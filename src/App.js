@@ -1,3 +1,4 @@
+import React from "react";
 import './App.css';
 import Horizontal_card from './Components/horizontal_card';
 import Card from './Components/vertical_card';

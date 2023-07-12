@@ -24,10 +24,21 @@ body {
   top: 95px;
   left: 8px;
 }
-
-
+ul{
+  display: inline-block;
+  width: 250px;
+  list-style-type: none;
+  padding: 0 0;
+  margin-right: 100px;
+}
+.hide_links{
+  visibility: hidden;
+}
 .container{
   margin-top: 15px;
+}
+.ulh2{
+  padding-bottom: 15px;
 }
 
 /* For giving margin to whole cards */
@@ -116,6 +127,9 @@ span{
     width: 450px;
     height: 250px;
   }
+  ul{
+    width: 150px;
+  }
   .desc{
     width: 350px;
     height: 250px;
@@ -139,6 +153,9 @@ span{
     .detail_of_show{
       display: none;
 
+    }
+    ul{
+      width: 150px;
     }
     .card-container{
       margin-left: 0px;
@@ -269,6 +286,10 @@ ul{
 
 }
 
+.links{
+  text-align: left;
+}
+
 .top-content{
   margin-top:25px ;
 }
@@ -353,7 +374,9 @@ h3{
 .googleplay{
   height: 40px;
   width: 120px;
-  margin-left:35px;
+  margin-left:15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .footer_choices{
   color: #8597ac;
