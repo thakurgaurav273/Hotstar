@@ -47,6 +47,69 @@ ul{
 }
 
 
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+.fa-chevron-left,.fa-chevron-right{
+  color: white;
+}
+.carousel-item {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 100%;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  visibility: hidden;
+  transition-timing-function: ease-in;
+}
+.prev-button{
+  background: rgb(3,0,7);
+  background: -moz-linear-gradient(270deg, rgba(3,0,7,0.26156761532738093) 4%, rgba(7,1,15,1) 78%);
+  background: -webkit-linear-gradient(270deg, rgba(3,0,7,0.26156761532738093) 4%, rgba(7,1,15,1) 78%);
+  background: linear-gradient(270deg, rgba(3,0,7,0.26156761532738093) 4%, rgba(7,1,15,1) 78%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#030007",endColorstr="#07010f",GradientType=1);
+}
+.next-button{
+  background: rgb(3,0,7);
+  background: -moz-linear-gradient(90deg, rgba(3,0,7,0.26156761532738093) 4%, rgba(7,1,15,1) 78%);
+  background: -webkit-linear-gradient(90deg, rgba(3,0,7,0.26156761532738093) 4%, rgba(7,1,15,1) 78%);
+  background: linear-gradient(90deg, rgba(3,0,7,0.26156761532738093) 4%, rgba(7,1,15,1) 78%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#030007",endColorstr="#07010f",GradientType=1);
+}
+
+.carousel-container:hover{
+    .next-button,.prev-button{
+      visibility: visible;
+
+    }
+}
+
+.prev-button {
+  left: 0px;
+}
+
+.next-button {
+  right: 0px;
+}
+
+
 .horizontal_card_image{
   height:165px;
   width: 307px;
@@ -394,7 +457,7 @@ h2{
   top: 0px;
   left: 0px;
   padding-top: 260px;
-  width: 200px;
+  width: 100px;
   height: 100vh;
   z-index: 50;
   color: transparent;
@@ -402,7 +465,7 @@ h2{
   transition: all .5s ease-in-out 0s;
 }
 .menu_options:hover{
-  width: 400px;
+  width: 300px;
   color: white;
   height: 100vh;
   /* z-index: -1 !important; */
