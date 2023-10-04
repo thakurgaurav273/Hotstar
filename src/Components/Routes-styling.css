@@ -1,0 +1,82 @@
+/* Myspace styles */
+.login-mssg{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 25px;
+}
+h1{
+    margin-bottom: 7px !important;
+}
+.myspace-welcome-mssg{
+    color: #758aae;
+    font-size:20px ;   
+}
+.help-button{
+    background-color: rgba(31, 31, 31, 0.8);
+    height: 45px;
+    width: 250px;
+    font-size: 20px;
+    position: fixed;
+    border: 0;
+    top: 50px;
+    right: 75px;
+    color: white;
+}
+.Login-myspace{
+    height: 50px;
+    margin-top: 25px;
+    width: 250px;
+    font-weight: bold;
+    border: 0;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    background: rgb(9,89,226);
+    background: -moz-linear-gradient(90deg, rgba(9,89,226,1) 4%, rgba(6,41,150,1) 78%);
+    background: -webkit-linear-gradient(90deg, rgba(9,89,226,1) 4%, rgba(6,41,150,1) 78%);
+    background: linear-gradient(90deg, rgba(9,89,226,1) 4%, rgba(6,41,150,1) 78%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0959e2",endColorstr="#062996",GradientType=1);
+}
+.myspace-footer{
+    position: fixed;
+    bottom: 0 !important;
+}
+.myspace-container{
+    height: 1000px;
+
+}
+@media screen and (max-width:1000px){
+    .myspace-footer{
+        position: relative !important;
+    }
+}
+
+/* Search styles */
+
+.search-content{
+    width: 90%;
+    margin-top: 50px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #2b3240;
+    border: 0;
+    color: aliceblue;
+    font-size: 18px;
+    padding-left: 70px;
+}
+
+.icon-of-search-page{
+    position: absolute;
+    top: 65px;
+    padding-left: 15px;
+    color: rgb(195, 194, 194);
+    font-size: 25px;
+}
+
+.icon-of-search-page-focus{
+    position: absolute;
+    top: 65px;
+    padding-left: 15px;
+    color:white;
+    font-size: 25px;
+}

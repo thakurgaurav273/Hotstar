@@ -43,7 +43,7 @@ ul{
 
 /* For giving margin to whole cards */
 .card-container{
-  margin-left: 120px;
+  margin-left: 150px;
 }
 
 
@@ -51,6 +51,8 @@ ul{
   width: 100%;
   overflow: hidden;
   position: relative;
+  height: 300px;
+  z-index: 0;
 }
 
 .carousel {
@@ -64,6 +66,7 @@ ul{
   flex-shrink: 0;
   margin-right: 10px;
 }
+
 
 .prev-button,
 .next-button {
@@ -144,20 +147,20 @@ ul{
   margin-top: 15px;
   margin-bottom: 10px;
 }
-/* options in menu */
-.options{
-  position: fixed;
-  top: 260px;
-  left: 35px;
 
-}
 /* icons in the menu */
 .items{
-  margin-bottom: 45px;
+  /* margin-bottom: 45px; */
   font-size: 25px;
   color: rgb(206, 203, 203);
 }
-
+.menubar-item-label{
+  display: inline-block;
+  padding-left: 15px;
+}
+.menubar-item-container:hover{
+    cursor: pointer;
+}
 /* desctiption of each cards */
 span{
   margin-top: 5px;
@@ -448,27 +451,27 @@ h3{
 .check{
   margin-right: 25px;
 }
-h2{
-  padding-left: 100px;
-  padding-bottom: 15px;
-}
 .menu_options{
   position: fixed;
   top: 0px;
   left: 0px;
-  padding-top: 260px;
-  width: 100px;
+  width: 140px;
+  height: 500px;
+  padding-top: 14%;
+  padding-left: 25px;
   height: 100vh;
   z-index: 50;
   color: transparent;
   background-color:transparent;
-  transition: all .5s ease-in-out 0s;
+  transition: all .1s ease-in-out 0s;
+}
+.menubar-item-container{
+  width: 150px;
 }
 .menu_options:hover{
-  width: 300px;
+  width: 140px;
   color: white;
   height: 100vh;
-  /* z-index: -1 !important; */
   background: rgb(0,0,8);
   background: -moz-linear-gradient(90deg, rgba(0,0,8,1) 2%, rgba(239,239,239,0) 100%);
   background: -webkit-linear-gradient(90deg, rgba(0,0,8,1) 2%, rgba(239,239,239,0) 100%);

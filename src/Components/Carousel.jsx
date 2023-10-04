@@ -1,79 +1,69 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import '../App.css';
 import Card from './vertical_card';
 
-const Carousel = ({cards}) => {
+const Carousel = ({ cards }) => {
   const carouselRef = useRef(null);
-  const [isDragging, setIsDragging] = useState(false);
-  const [startPos, setStartPos] = useState(0);
-  const [currentTranslate, setCurrentTranslate] = useState(0);
+
   const [prevTranslate, setPrevTranslate] = useState(0);
+  const [itemWidth, setItemWidth] = useState(0);
 
-  const handleMouseDown = (e) => {
-    setIsDragging(true);
-    setStartPos(e.clientX);
-    setCurrentTranslate(prevTranslate);
-    carouselRef.current.style.cursor = 'grabbing';
-  };
-
-  const handleMouseMove = (e) => {
-    if (!isDragging) return;
-    const distance = e.clientX - startPos;
-    carouselRef.current.style.transform = `translateX(${currentTranslate + distance}px)`;
-  };
-
-  const handleMouseUp = (e) => {
-    setIsDragging(false);
-    carouselRef.current.style.cursor = 'grab';
-    setPrevTranslate(currentTranslate + (e.clientX - startPos));
-  };
-
-  const slidePrev = () => {
-    const itemWidth = carouselRef.current.querySelector('.carousel-item').offsetWidth;
-    const containerWidth = carouselRef.current.offsetWidth;
-    const minTranslate = -itemWidth * (carouselRef.current.children.length - Math.floor(containerWidth / itemWidth));
-
-    if (prevTranslate < 0) {
-      const newTranslate = Math.max(prevTranslate + itemWidth, minTranslate);
-      carouselRef.current.style.transform = `translateX(${newTranslate}px)`;
-      setCurrentTranslate(newTranslate);
-      setPrevTranslate(newTranslate);
+  useEffect(() => {
+    // Update itemWidth when component mounts or when cards change
+    if (carouselRef.current) {
+      setItemWidth(carouselRef.current.querySelector('.carousel-item').offsetWidth);
     }
-  };
+  }, [cards]);
+
+
+const slidePrev = () => {
+  const minTranslate = -itemWidth;
+
+  if (prevTranslate < 0) {
+    const newTranslate = Math.max(prevTranslate + itemWidth, minTranslate);
+    carouselRef.current.style.transform = `translateX(${newTranslate}px)`;
+    setPrevTranslate(newTranslate);
+  } else {
+    // Snap to the first item
+    const firstItemTranslate = 0;
+    carouselRef.current.style.transform = `translateX(${firstItemTranslate}px)`;
+    setPrevTranslate(firstItemTranslate);
+  }
+};
 
   const slideNext = () => {
-    const itemWidth = carouselRef.current.querySelector('.carousel-item').offsetWidth;
-    // const containerWidth = carouselRef.current.offsetWidth;
-    const maxTranslate = 0;
-
-    if (prevTranslate > -itemWidth * (carouselRef.current.children.length - 1)) {
+    const containerWidth = carouselRef.current.offsetWidth;
+    const maxTranslate = -itemWidth * (carouselRef.current.children.length - Math.floor(containerWidth / itemWidth)) + itemWidth;
+  
+    if (prevTranslate > maxTranslate) {
       const newTranslate = Math.min(prevTranslate - itemWidth, maxTranslate);
       carouselRef.current.style.transform = `translateX(${newTranslate}px)`;
-      setCurrentTranslate(newTranslate);
       setPrevTranslate(newTranslate);
+    } else {
+      // Snap to the last item
+      const lastItemTranslate = -itemWidth * (carouselRef.current.children.length - Math.floor(containerWidth / itemWidth));
+      carouselRef.current.style.transform = `translateX(${lastItemTranslate}px)`;
+      setPrevTranslate(lastItemTranslate);
     }
   };
+  
 
   return (
     <div className="carousel-container">
       <div
         className="carousel"
         ref={carouselRef}
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp}
-        // onMouseLeave={handleMouseUp}
-        onTouchStart={handleMouseDown}
-        // onTouchMove={handleMouseMove}
-        // onTouchEnd={handleMouseUp}
-        onTouchCancel={handleMouseUp}
       >
-    {cards.map((card, index) => (
-    <Card key={index} title={card.title} source={card.source} />
-    ))}
+        {cards.map((card, index) => (
+          <Card key={index} title={card.title} source={card.source} />
+        ))}
       </div>
-      <button className="prev-button" onClick={slidePrev}><i class="fa-solid fa-chevron-left"></i></button>
-      <button className="next-button" onClick={slideNext}><i class="fa-solid fa-chevron-right"></i></button>
+      <button className="prev-button" onClick={slidePrev} disabled={prevTranslate >= 0}>
+        <i className="fa-solid fa-chevron-left"></i>
+      </button>
+      <button className="next-button" onClick={slideNext}>
+        <i className="fa-solid fa-chevron-right"></i>
+      </button>
     </div>
   );
 };
