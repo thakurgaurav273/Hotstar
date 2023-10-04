@@ -1,25 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Menu from './menu_bar'
 import Footer from './footer'
 import "./Routes-styling.css"
+import Card from './vertical_card'
+import PopularSearch from './popular-searches'
 export default function Search() {
+    const [newClass,setClass] = useState("fa-solid icon-of-search-page fa-magnifying-glass")
+    function setfocus(){    
+        setClass("fa-solid icon-of-search-page-focus fa-magnifying-glass");
+    }
+    function resetfocus(){    
+        setClass("fa-solid icon-of-search-page fa-magnifying-glass");
+    }
   return (  
     <>
         <Menu/>
         <div className='Myspace-container'>
-            <div className="help-support">
-                <button className='help-button'><i class="fa fa-question-circle"></i> &nbsp;Help & Support</button>
-            </div>
-            <div className="login-mssg">
-                <h1 className='Login-h1'>Login to Disney+ Hotstar</h1>
-                <span className='myspace-welcome-mssg'>Start watching from where you left off,personalised for kids and more</span> <br />
-                <button className='Login-myspace'>Log In</button>
-            </div>
+        <i className={newClass}></i>
+            <input type="text" className="search-content" placeholder='Movies, Shows and more' onFocus={setfocus} onBlur={resetfocus}/>
+            <br /><br />
+            <h3 className='categories'>Popular Searches</h3>
+            {PopularSearch.map(Card)}
             <div className='myspace-footer'>
-            <Footer/>
+                <Footer/>
+            </div>
         </div>
-        </div>
-       
     </>
   )
 }
