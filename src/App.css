@@ -158,6 +158,9 @@ ul{
   display: inline-block;
   padding-left: 15px;
 }
+.menubar-item-container:hover{
+    cursor: pointer;
+}
 /* desctiption of each cards */
 span{
   margin-top: 5px;
