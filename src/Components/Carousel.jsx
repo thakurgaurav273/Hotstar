@@ -4,6 +4,7 @@ import Card from './vertical_card';
 
 const Carousel = ({ cards }) => {
   const carouselRef = useRef(null);
+
   const [prevTranslate, setPrevTranslate] = useState(0);
   const [itemWidth, setItemWidth] = useState(0);
 
