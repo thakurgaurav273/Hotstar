@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import '../App.css';
 import Card from './vertical_card';
 
-const Carousel = ({cards}) => {
+  const Carousel = ({cards}) => {
   const carouselRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startPos, setStartPos] = useState(0);
@@ -15,7 +15,7 @@ const Carousel = ({cards}) => {
     setCurrentTranslate(prevTranslate);
     carouselRef.current.style.cursor = 'grabbing';
   };
-
+ 
   const handleMouseMove = (e) => {
     if (!isDragging) return;
     const distance = e.clientX - startPos;
@@ -62,10 +62,7 @@ const Carousel = ({cards}) => {
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
-        // onMouseLeave={handleMouseUp}
         onTouchStart={handleMouseDown}
-        // onTouchMove={handleMouseMove}
-        // onTouchEnd={handleMouseUp}
         onTouchCancel={handleMouseUp}
       >
     {cards.map((card, index) => (
