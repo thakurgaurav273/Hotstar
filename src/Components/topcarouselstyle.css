@@ -1,0 +1,59 @@
+.carousel-container2 {
+    display: flex;
+    overflow: hidden;
+    height: 700px;
+  }
+  
+  .carousel-slide {
+    width: 100%;
+    display: none;
+    /* height: 100%; */
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-slide img {
+    display: none;
+    background-size: cover;
+  }
+  
+  .details {
+    text-align: left;
+    padding: 20px;
+    width: 400px;
+    margin-top: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  .details span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .details p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  #slide1 {
+    display: block;
+    background: url('https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/1220/1581220-i-dbc25bff7710') center/cover no-repeat;
+  }
+  
+  #slide2 {
+    background: url('https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/2678/1572678-i-77dd32615c5a') center/cover no-repeat;
+  }
+  
+  #slide3 {
+    background: url('https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/6381/1606381-i-764365552cfb') center/cover no-repeat;
+  }
+  
+  #slide4 {
+    background: url('https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/9167/1569167-i-ea6463d522e0') center/cover no-repeat;
+  }
+  
+  .subscribe-top-carousel{
+    width: 250px;
+    height: 45px;
+    background-color: rgb(209, 211, 212);
+  }
