@@ -154,6 +154,10 @@ ul{
   font-size: 25px;
   color: rgb(206, 203, 203);
 }
+.highlight-link{
+  color: white !important;
+}
+
 .menubar-item-label{
   display: inline-block;
   padding-left: 15px;

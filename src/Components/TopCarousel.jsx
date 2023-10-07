@@ -1,8 +1,8 @@
 import React from 'react'
 import "./topcarouselstyle.css"
-export default function TopCarousel() {
-    let currentSlide = 0;  // Changed initial value to 0
 
+export default function TopCarousel({ 'movies-title': moviesTitle }) {
+    let currentSlide = 0;  // Changed initial value to 0
     function showSlide(n) {
       const slides = document.getElementsByClassName('carousel-slide');
       if (n >= slides.length) { currentSlide = 0; }  // Adjusted the condition
@@ -24,54 +24,53 @@ export default function TopCarousel() {
     }
     
     setInterval(autoSlide, 5000);
-    
   return (
     <>
           <div class="carousel-container2">
-            <div class="carousel-slide" id="slide1">
+            {/* Slide 1 of my top carousel inline css added for dynamic background */}
+            <div class="carousel-slide" id="slide1" style={{background: `url(${moviesTitle[0].backgroundimage}) center/cover no-repeat`}}>
             <div className="details">
-                    <img className='myimg' src="https://img10.hotstar.com/image/upload/f_auto,h_148/sources/r1/cms/prod/2541/1602541-t-30835e5f1322" alt="" srcset="" />
+                    <img className='myimg' src={moviesTitle[0].thumbnail} alt="" srcset="" />
                     <br />
-                    <p className='timing'>2022 &#8226; 2h 3m &#8226; Hindi &#8226; <button class="transparent-button rating">U/A 16+</button></p>
-                    <p className='description-of-movie'>Introverted and awkward Dr Freddy Ginwala desperately searches for a soulmate. When he finally finds her, the relationship becomes as painful as a root canal.</p>
-                    <p className='timing'>Drama | Thriller | Anti-hero | Betrayal</p>
+                    <p className='timing'>{moviesTitle[0].year} &#8226; {moviesTitle[0].duration} &#8226; {moviesTitle[0].language} &#8226; <button class="transparent-button rating">{moviesTitle[0].ageRating}</button></p>
+                    <p className='description-of-movie'>{moviesTitle[0].description}</p>
+                    <p className='timing'>{moviesTitle[0].feature1} | {moviesTitle[0].feature2} | {moviesTitle[0].feature3} | {moviesTitle[0].feature4}</p>
                     <br /><br />
                     <button class="transparent-button watch-free"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;&nbsp;Watch For Free</button>
                     <button class="transparent-button"><i class="fa-solid fa-plus"></i></button>
                 </div>
             </div>
-            <div class="carousel-slide" id="slide2">
+            <div class="carousel-slide" id="slide2" style={{background: `url(${moviesTitle[1].backgroundimage}) center/cover no-repeat`}}>
             <div className="details">
-                    <img className='myimg' src="https://img10.hotstar.com/image/upload/f_auto,h_148/sources/r1/cms/prod/4934/1594934-t-c2e816be5f21" alt="" srcset="" />
+                    <img className='myimg' src={moviesTitle[1].thumbnail} alt="" srcset="" />
                     <br />
-                    <p className='timing'>2021 &#8226; 2h 33m &#8226; Hindi &#8226; <button class="transparent-button rating">U/A 13+</button></p>
-                    <p className='description-of-movie'>During the late '80s, Hemant Shah, the man with the Midas touch, pulled off the biggest hustle that shook India's financial fabric. Inspired by true events.</p>
-                    <p className='timing'>Crime | Drama | Biopic | Controversial</p>
+                    <p className='timing'>{moviesTitle[1].year} &#8226; {moviesTitle[1].duration} &#8226; {moviesTitle[1].language} &#8226; <button class="transparent-button rating">{moviesTitle[0].ageRating}</button></p>
+                    <p className='description-of-movie'>{moviesTitle[1].description}</p>
+                    <p className='timing'>{moviesTitle[1].feature1} | {moviesTitle[1].feature2} | {moviesTitle[1].feature3} | {moviesTitle[1].feature4}</p>
                     <br /><br />
                     <button class="transparent-button watch-free"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;&nbsp;Watch For Free</button>
                     <button class="transparent-button"><i class="fa-solid fa-plus"></i></button>
                 </div>
             </div>
-            <div class="carousel-slide" id="slide3">
+            <div class="carousel-slide" id="slide3" style={{background: `url(${moviesTitle[2].backgroundimage}) center/cover no-repeat`}}>
             <div className="details">
-                    <img className='myimg' src="https://img10.hotstar.com/image/upload/f_auto,h_148/sources/r1/cms/prod/2745/1592745-t-71227bb0a25d" alt="" srcset="" />
+                    <img className='myimg' src={moviesTitle[2].thumbnail} alt="" srcset="" />
                     <br />
-                    <p className='timing'>2022 &#8226; 2h 25m &#8226; Hindi &#8226; <button class="transparent-button rating">U/A 16+</button></p>
-                    <p className='description-of-movie'>When a series of mysterious events stirs pandemonium in a village, an eccentric cop Vikrant Rona sets out to solve the case wherein everyone is under the radar.</p>
-                    <p className='timing'>Action | Thriller | Drama | Crime</p>
+                    <p className='timing'>{moviesTitle[2].year} &#8226; {moviesTitle[2].duration} &#8226; {moviesTitle[2].language} &#8226; <button class="transparent-button rating">{moviesTitle[0].ageRating}</button></p>
+                    <p className='description-of-movie'>{moviesTitle[2].description}</p>
+                    <p className='timing'>{moviesTitle[2].feature1} | {moviesTitle[2].feature2} | {moviesTitle[2].feature3} | {moviesTitle[2].feature4}</p>
                     <br /><br />
                     <button class="transparent-button watch-free"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;&nbsp;Watch For Free</button>
                     <button class="transparent-button"><i class="fa-solid fa-plus"></i></button>
                 </div>
-   
             </div>
-            <div class="carousel-slide" id="slide4">
+            <div class="carousel-slide" id="slide4" style={{background: `url(${moviesTitle[3].backgroundimage}) center/cover no-repeat`}}>
             <div className="details">
-                    <img className='myimg' src="https://img10.hotstar.com/image/upload/f_auto,h_148/sources/r1/cms/prod/4924/1594924-t-ac6570c7646d" alt="" srcset="" />
+                    <img className='myimg' src={moviesTitle[3].thumbnail} alt="" srcset="" />
                     <br />
-                    <p className='timing'>2022 &#8226; 2h 23m &#8226; Telugu &#8226; <button class="transparent-button rating">U/A 16+</button></p>
-                    <p className='description-of-movie'>An upright cop goes toe to toe with an ex-havildar over a petty case. As the quarrel between these egoistic men gets intense, how far will they go to win?</p>
-                    <p className='timing'>Action | Drama | Thriller | Buddy Cop</p>
+                    <p className='timing'>{moviesTitle[3].year} &#8226; {moviesTitle[3].duration} &#8226; {moviesTitle[3].language} &#8226; <button class="transparent-button rating">{moviesTitle[0].ageRating}</button></p>
+                    <p className='description-of-movie'>{moviesTitle[3].description}</p>
+                    <p className='timing'>{moviesTitle[3].feature1} | {moviesTitle[3].feature2} | {moviesTitle[3].feature3} | {moviesTitle[3].feature4}</p>
                     <br /><br />
                     <button class="transparent-button watch-free"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;&nbsp;Watch For Free</button>
                     <button class="transparent-button"><i class="fa-solid fa-plus"></i></button>

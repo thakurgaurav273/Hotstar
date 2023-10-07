@@ -5,8 +5,6 @@ import { Navigate } from "react-router-dom";
 export default function MenubarItem(props) {
     const [clicked,isClicked]=useState(false);
     const [link,setLink]=useState("/");
-
-    
     function handleClick(){
         if(props.title==="Home"){
             setLink("/");
