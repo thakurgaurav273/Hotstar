@@ -2,7 +2,7 @@ body {
   background-color: #0f1014;
   color: white;
   overflow-x: hidden;
-
+  padding-left: 0px;
 }
 
 
@@ -212,7 +212,6 @@ span{
     }
     .detail_of_show{
       display: none;
-
     }
     .card-container{
       margin-left: 0px;
@@ -223,7 +222,7 @@ span{
       display: inline-block;
     }
     .categories{
-      margin-left: 15px;
+      margin-left: -8px;
     }
     .top-content{
       padding-top: 60px;
