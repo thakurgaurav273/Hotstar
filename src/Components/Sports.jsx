@@ -2,9 +2,11 @@ import React from 'react'
 import Menu from './menu_bar'
 import Footer from './footer'
 import "./Routes-styling.css"
+import Navbar from "./navbar.jsx"
 export default function Sports() {
   return (  
     <>
+        <Navbar/>
         <Menu/>
         <div className='Myspace-container'>
             <div className="help-support">

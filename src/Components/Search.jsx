@@ -3,6 +3,7 @@ import Menu from './menu_bar'
 import Footer from './footer'
 import "./Routes-styling.css"
 import Card from './vertical_card'
+import Navbar from "./navbar"
 import PopularSearch from './popular-searches'
 export default function Search() {
     const [newClass,setClass] = useState("fa-solid icon-of-search-page fa-magnifying-glass")
@@ -13,7 +14,8 @@ export default function Search() {
         setClass("fa-solid icon-of-search-page fa-magnifying-glass");
     }
   return (  
-    <>
+    <>  
+        <Navbar/>
         <Menu/>
         <div className='Myspace-container'>
         <i className={newClass}></i>
@@ -21,10 +23,8 @@ export default function Search() {
             <br /><br />
             <h3 className='categories'>Popular Searches</h3>
             {PopularSearch.map(Card)}
-            <div className='myspace-footer'>
-                <Footer/>
-            </div>
         </div>
+        <Footer/>
     </>
   )
 }

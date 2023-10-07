@@ -3,10 +3,12 @@ import Menu from './menu_bar'
 import Footer from './footer'
 import Continue from './continue_watching'
 import Horizontal_card from './horizontal_card'
+import Navbar from './navbar.jsx'
 import "./Routes-styling.css"
 export default function Myspace() {
   return (  
     <>
+        <Navbar/>
         <Menu/>
         <div className='Myspace-container'>
             <div className="help-support">
@@ -20,11 +22,8 @@ export default function Myspace() {
             <div className='watch-history'>
             {Continue.map(Horizontal_card)}
             </div>
-            <div className='myspace-footer'>
-            <Footer/>
-        </div>
-        </div>
-       
+          </div>
+       <Footer/>
     </>
   )
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../App.css'
 import MenubarItem from './menubar-items'
-export default function Menu(){
+export default function Menu(props){
   const [hover,setHover]=useState(false);
   function handlemouse(){
     if(hover===true){
