@@ -26,6 +26,7 @@ body {
   left: 8px;
 }
 
+
 .container{
   margin-top: 15px;
 }
@@ -48,6 +49,9 @@ body {
   z-index: 0;
 }
 
+.hori-carousel-container{
+  height: 200px !important;
+}
 .carousel {
   display: flex;
   transition: transform 0.3s ease;
@@ -60,7 +64,9 @@ body {
   margin-right: 10px;
 }
 
-
+.hori{
+  height: 100% !important;
+}
 .prev-button,
 .next-button {
   position: absolute;
@@ -134,11 +140,15 @@ body {
 }
 
 .card-title{
-  font-size: 17px;
+  font-size: 20px;
 }
 .categories{
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 45px;
+  margin-bottom: 15px;
+  padding-left: 0;
+  font-weight: bold;
+  font-size: 23px;
+  color: rgb(216, 217, 218)
 }
 
 /* icons in the menu */

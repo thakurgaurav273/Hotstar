@@ -19,7 +19,15 @@ export default function Myspace() {
                 <span className='myspace-welcome-mssg'>Start watching from where you left off,personalised for kids and more</span> <br />
                 <button className='Login-myspace'>Log In</button>
             </div>
+            <br /><br />
+            <br /><br />
             <div className='watch-history'>
+            {Continue.map(Horizontal_card)}
+            </div>
+            <div className='watch-history hide-myspace-for-balancing'>
+            {Continue.map(Horizontal_card)}
+            </div>
+            <div className='watch-history hide-myspace-for-balancing'>
             {Continue.map(Horizontal_card)}
             </div>
           </div>

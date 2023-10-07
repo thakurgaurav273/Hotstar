@@ -7,6 +7,9 @@
 h1{
     margin-bottom: 7px !important;
 }
+.hide-myspace-for-balancing{
+    visibility: hidden !important;
+  }
 .myspace-welcome-mssg{
     color: #758aae;
     font-size:20px ;   

@@ -59,6 +59,7 @@ const arr=[
         }
 
     ],
+    // Details of TV Section Carousel
     [
         {
             key:1,
@@ -115,6 +116,48 @@ const arr=[
             feature2:"Festival",
             feature3:"Celebration",
             feature4:"Spiritual"
+        }
+
+    ]
+    ,
+    // Details of Sports Section Carousel
+    [
+        {
+            key:1,
+            backgroundimage:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/7870/1607870-i-bc2fd79dcb29",
+            thumbnail:"https://img10.hotstar.com/image/upload/f_auto,h_148/sources/r1/cms/prod/7871/1607871-t-2e6537afefd6",
+            year:"ICC Men's Cricket World Cup 2023",
+            duration:"17 m",
+            language:"Cricket",
+            description:"South Africa clinched a 102-run win over Sri Lanka after posting the highest-ever total in the ICC Men's Cricket World Cup",
+
+        },
+        {
+            key:2,
+            backgroundimage:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/7756/1607756-i-df262a4e7db5",
+            thumbnail:"https://img10.hotstar.com/image/upload/f_auto,h_148/sources/r1/cms/prod/7755/1607755-t-83eb8e82bba0",
+            year:"ICC Men's Cricket World Cup 2023",
+            duration:"13 m",
+            language:"Cricket",
+            description:"Bangladesh overcame a feeble Afghanistan to start their campaign on a winning note in the ICC Men's Cricket World Cup 2023",
+        },
+        {
+            key:3,
+            backgroundimage:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/7090/1607090-i-f7e5bfa64678",
+            thumbnail:"https://img10.hotstar.com/image/upload/f_auto,h_148/sources/r1/cms/prod/7088/1607088-t-7a4787e9c5fd",
+            year:"ICC Men's Cricket World Cup 2023",
+            duration:"4 m",
+            language:"Cricket",
+            description:"India take on Australia in the ICC Men's Cricket World Cup 2023 match at Chennai and here's everything you need to know",
+        },
+        {
+            key:4,
+            backgroundimage:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/1569/1601569-i-58e99c657137",
+            thumbnail:"https://img10.hotstar.com/image/upload/f_auto,h_148/sources/r1/cms/prod/9741/1599741-t-ffec7d2aa08e",
+            year:"ICC Men's Cricket World Cup 2023",
+            duration:"2 m",
+            language:"Cricket",
+            description:"Here's what we can expect from Team India in the upcoming ICC Men's Cricket World Cup 2023",
         }
 
     ]
