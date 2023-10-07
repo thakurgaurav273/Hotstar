@@ -1,7 +1,7 @@
 import React from 'react'
 import "./App.css"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Sports from './Components/Sports';
+import Sports from './Components/Sports.jsx';
 import Home from './Components/Home.jsx'
 import TV from './Components/TV.jsx'
 import Search from './Components/Search.jsx'
