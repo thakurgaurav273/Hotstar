@@ -1,7 +1,7 @@
 .carousel-container2 {
     display: flex;
     overflow: hidden;
-    height: 700px;
+    height: 900px;
   }
   
   .carousel-slide {
@@ -19,9 +19,9 @@
   .details {
     text-align: left;
     padding: 20px;
-    width: 400px;
-    margin-top: 500px;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 450px;
+    margin-top: 350px;
+    background-color: rgba(209, 208, 208, 0);
     color: white;
   }
   
@@ -37,23 +37,61 @@
 
   #slide1 {
     display: block;
-    background: url('https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/1220/1581220-i-dbc25bff7710') center/cover no-repeat;
+    background: url('https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/2542/1602542-i-f8718d79a7ea') center/cover no-repeat;
   }
   
   #slide2 {
-    background: url('https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/2678/1572678-i-77dd32615c5a') center/cover no-repeat;
+    background: url('https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/4935/1594935-i-295959e3ab60') center/cover no-repeat;
   }
   
   #slide3 {
-    background: url('https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/6381/1606381-i-764365552cfb') center/cover no-repeat;
+    background: url('https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/2746/1592746-i-065298f15efb') center/cover no-repeat;
   }
   
   #slide4 {
-    background: url('https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/9167/1569167-i-ea6463d522e0') center/cover no-repeat;
+    background: url('https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/4925/1594925-i-a4f0ad60e681') center/cover no-repeat;
   }
   
-  .subscribe-top-carousel{
-    width: 250px;
-    height: 45px;
-    background-color: rgb(209, 211, 212);
+  .transparent-button {
+    background-color: rgba(255, 255, 255, 0.146); /* Change the alpha value (0.5) to adjust opacity */
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 60px !important;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 20px;
+  }
+  
+  .transparent-button:hover {
+    background-color: rgba(255, 255, 255, 0.442); /* Adjust hover opacity */
+  }
+  
+  .myimg{
+    display: block !important;
+  }
+
+  .watch-free{
+    width: 320px !important;
+  }
+
+  .rating{
+    height: 25px !important;
+    width: 70px !important;
+    font-size: 15px;
+    padding: 0 0;
+  }
+
+  .timing{
+    font-weight: bold;
+    font-size: 16px !important;
+  }
+
+  .description-of-movie{
+    font-size: 19px !important;
+    text-align: justify;
+    color: aliceblue;
   }
