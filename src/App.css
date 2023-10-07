@@ -51,7 +51,7 @@ ul{
   width: 100%;
   overflow: hidden;
   position: relative;
-  height: 300px;
+  height: 250px;
   z-index: 0;
 }
 
@@ -260,6 +260,10 @@ span{
       margin-top: 12px;
       margin-bottom: 12px;
       width: 120px;
+    }
+
+    .carousel-container{
+      height: 160px;
     }
 
     .brand_logo .desc .top-image .top-content{
