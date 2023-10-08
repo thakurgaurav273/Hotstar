@@ -2,6 +2,7 @@ body {
   background-color: #0f1014;
   color: white;
   overflow-x: hidden;
+  padding-left: 0px;
 }
 
 
@@ -24,19 +25,12 @@ body {
   top: 95px;
   left: 8px;
 }
-ul{
-  display: inline-block;
-  width: 250px;
-  list-style-type: none;
-  padding: 0 0;
-  margin-right: 100px;
-}
-.hide_links{
-  visibility: hidden;
-}
+
+
 .container{
   margin-top: 15px;
 }
+
 .ulh2{
   padding-bottom: 15px;
 }
@@ -51,10 +45,13 @@ ul{
   width: 100%;
   overflow: hidden;
   position: relative;
-  height: 300px;
+  height: 250px;
   z-index: 0;
 }
 
+.hori-carousel-container{
+  height: 200px !important;
+}
 .carousel {
   display: flex;
   transition: transform 0.3s ease;
@@ -67,7 +64,9 @@ ul{
   margin-right: 10px;
 }
 
-
+.hori{
+  height: 100% !important;
+}
 .prev-button,
 .next-button {
   position: absolute;
@@ -141,11 +140,15 @@ ul{
 }
 
 .card-title{
-  font-size: 17px;
+  font-size: 20px;
 }
 .categories{
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 45px;
+  margin-bottom: 15px;
+  padding-left: 0;
+  font-weight: bold;
+  font-size: 23px;
+  color: rgb(216, 217, 218)
 }
 
 /* icons in the menu */
@@ -154,6 +157,10 @@ ul{
   font-size: 25px;
   color: rgb(206, 203, 203);
 }
+.highlight-link{
+  color: white !important;
+}
+
 .menubar-item-label{
   display: inline-block;
   padding-left: 15px;
@@ -193,9 +200,6 @@ span{
     width: 450px;
     height: 250px;
   }
-  ul{
-    width: 150px;
-  }
   .desc{
     width: 350px;
     height: 250px;
@@ -218,10 +222,6 @@ span{
     }
     .detail_of_show{
       display: none;
-
-    }
-    ul{
-      width: 150px;
     }
     .card-container{
       margin-left: 0px;
@@ -232,7 +232,7 @@ span{
       display: inline-block;
     }
     .categories{
-      margin-left: 15px;
+      margin-left: 10px;
     }
     .top-content{
       padding-top: 60px;
@@ -258,18 +258,38 @@ span{
       width: 120px;
     }
 
+    .carousel-container{
+      height: 160px;
+    }
+
     .brand_logo .desc .top-image .top-content{
       margin-left:0 !important;
     }
-    .first,.second,.third,.forth{
-    /* margin-left: 0 !important; */
-    width: 200px !important;
-    position: relative;
-    display: block;
-    }
+
     .hotsnavbar{
       visibility: visible !important;
     }
+
+    .nav_options{
+      display: block !important;
+      position: absolute;
+      right:15px;
+    }
+
+    .menubar-item-container{
+      width: 85px !important;
+      height: 50px !important;
+    }
+    .items{
+      position: absolute;
+      top: 0;
+      padding-left: 5px;
+    }
+
+    .menubar-item-label{
+      visibility: hidden;
+    }
+
 }
 .hide_menu{
   background-color: #1b1e2b;
@@ -277,9 +297,6 @@ span{
   margin-top: 8px;
   height: 100vh;
   padding-top: 50px;
-}
-ul{
-  list-style-type:none;
 }
 .navbar-brand-logo{
   margin-top: 10px;
@@ -295,13 +312,6 @@ ul{
   top: 0;
   background-color: black;
 }
-.hamburger{
-  position: fixed;
-  right: 15px;
-  font-size: 25px;
-  top: 20px;
-
-}
 @media screen and (max-width:800px) {
     .video-background{
       margin-left:0px;
@@ -309,9 +319,9 @@ ul{
       width: 100% !important;
     }
     .top-image{
-      width: 400px;
+      width: 340px;
       padding-left: 25px;
-      height: 200px;
+      height: 180px;
     }
     .desc{
       width: 300px !important;
@@ -328,15 +338,62 @@ ul{
       display: none;
     }
     .menu_options{
-      margin-left: 0;
       visibility: hidden;
+      
     }
     .top_content{
       margin-left: 0 !important;
     }
+
+    .nav_options{
+      display: block!important;
+      position: absolute;
+      top: 15px;
+      right:15px;
+    }
+
+    .menubar-item-container{
+      width: 40px !important;
+      height: 50px !important;
+      margin-bottom: 15px !important;
+
+    }
+    .items{
+      position: absolute;
+      top: 0;
+      padding-left: 5px;
+    }
+
+    .menubar-item-label{
+      visibility: hidden;
+    }
+    .menubar-item-container:hover{
+      .menubar-item-label{
+        visibility: visible;
+        font-size: 20px;
+        padding-top: 10px;
+      }
+    }
+    .brand-logo{
+      position: absolute;
+      top: 5px;
+      left: -72px;
+      height: 35px !important;
+      width: 50px;
+      margin-top: -15px;
+    }
+    .subscribe{
+      position: absolute;
+      top: 28px;
+      left: -84px;
+      font-size: 13px;
+
+    }
 }
 
-
+.nav_options{
+  display: none;
+}
 .brand_logo{
   height: 50px;
   width: 50px;
@@ -350,10 +407,6 @@ ul{
   display: inline-block;
   margin-left: 80px;
 
-}
-
-.links{
-  text-align: left;
 }
 
 .top-content{
@@ -370,6 +423,7 @@ h3{
 
 .detail_of_show{
   margin-left: 25px;
+  width: 350px;
 }
 
 .top-subscribe{
@@ -401,36 +455,7 @@ h3{
   
 }
 
-.first{
-  position: absolute;
-  left: 95px;
-}
 
-.first,.second,.third,.forth{
-  display: inline-block;
-  width: 250px;
-  margin-left: 25px;
-  margin-right: 25px;
-  
-}
-.second{
-  position: absolute;
-  left: 450px;
-}
-.third{
-  position: absolute;
-  left: 800px;
-}
-.forth{
-  text-align: right;
-  /* position: absolute; */
-  
-  display: inline-block;
-  width: 650px;
-  margin-left: 600px;
-  margin-right: 25px;
-  
-}
 .social{
   margin-left: 10px;
   margin-right: 40px;

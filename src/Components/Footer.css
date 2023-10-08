@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    padding: 20px;
+    position: relative;
+    /* bottom: 0; */
+    width: 100%;
+    text-align: left;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+  }
+  
+ a{
+    color: rgb(196, 196, 197);
+    text-decoration: none;
+ }
+
+ ul{
+    list-style: none;
+    margin-left: 0;
+  }
+
+  h3{
+    padding-left: 35px;
+  }
+
+    @media (max-width: 800px) {
+        .footer {
+          flex-direction: column;
+          align-items: left;
+          text-align: left;
+        }
+      
+        .column {
+          width: 100%;
+          margin-bottom: 0px;
+        }
+      }
+      

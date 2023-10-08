@@ -1,6 +1,6 @@
 .carousel-container2 {
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 900px;
   }
   
@@ -21,7 +21,7 @@
     padding: 20px;
     width: 450px;
     margin-top: 350px;
-    background-color: rgba(209, 208, 208, 0);
+    background-color: rgba(204, 203, 203, 0);
     color: white;
   }
   
@@ -37,19 +37,35 @@
 
   #slide1 {
     display: block;
-    background: url('https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/2542/1602542-i-f8718d79a7ea') center/cover no-repeat;
   }
-  
-  #slide2 {
-    background: url('https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/4935/1594935-i-295959e3ab60') center/cover no-repeat;
-  }
-  
-  #slide3 {
-    background: url('https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/2746/1592746-i-065298f15efb') center/cover no-repeat;
-  }
-  
-  #slide4 {
-    background: url('https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/4925/1594925-i-a4f0ad60e681') center/cover no-repeat;
+
+  @media screen and (max-width:800px){
+    .carousel-container2{
+      height: 300px;
+      width: 100%;
+    }
+
+    .details{
+      padding-top: 130px;
+      margin-top: 0px;
+    }
+    .myimg{
+      height: 50px;
+      width: 150px;
+    }
+    .description-of-movie{
+      display: none;
+    }
+    .timing{
+      width: 80%;
+    }
+    .details {
+      background-color: rgba(63, 62, 62, 0.164);
+      color: white;
+    }
+    .transparent-button{
+      display: none;
+    }
   }
   
   .transparent-button {

@@ -7,6 +7,9 @@
 h1{
     margin-bottom: 7px !important;
 }
+.hide-myspace-for-balancing{
+    visibility: hidden !important;
+  }
 .myspace-welcome-mssg{
     color: #758aae;
     font-size:20px ;   
@@ -16,7 +19,7 @@ h1{
     height: 45px;
     width: 250px;
     font-size: 20px;
-    position: fixed;
+    position: absolute;
     border: 0;
     top: 50px;
     right: 75px;
@@ -44,11 +47,6 @@ h1{
 .myspace-container{
     height: 1000px;
 
-}
-@media screen and (max-width:1000px){
-    .myspace-footer{
-        position: relative !important;
-    }
 }
 
 /* Search styles */
@@ -79,4 +77,29 @@ h1{
     padding-left: 15px;
     color:white;
     font-size: 25px;
+}
+
+@media screen and (max-width:800px) {
+    .search-content{
+        width: 90%;
+        margin-top: 80px !important;
+        height: 50px;
+        border-radius: 8px;
+        background-color: #2b3240;
+        border: 0;
+        color: aliceblue;
+        font-size: 18px;
+        padding-left: 70px;
+    }
+    .icon-of-search-page{
+        top: 95px;
+    }
+    
+    .icon-of-search-page-focus{
+        top: 95px;
+    }
+    .help-button{
+        top: 80px;
+    }
+
 }
