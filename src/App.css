@@ -58,6 +58,7 @@ body {
 }
 .fa-chevron-left,.fa-chevron-right{
   color: white;
+  font-size: 22px;
 }
 .carousel-item {
   flex-shrink: 0;
@@ -65,7 +66,8 @@ body {
 }
 
 .hori{
-  height: 100% !important;
+  margin-top: -22px !important;
+  height: 90% !important;
 }
 .prev-button,
 .next-button {
@@ -82,18 +84,18 @@ body {
   transition-timing-function: ease-in;
 }
 .prev-button{
-  background: rgb(3,0,7);
-  background: -moz-linear-gradient(270deg, rgba(3,0,7,0.26156761532738093) 4%, rgba(7,1,15,1) 78%);
-  background: -webkit-linear-gradient(270deg, rgba(3,0,7,0.26156761532738093) 4%, rgba(7,1,15,1) 78%);
-  background: linear-gradient(270deg, rgba(3,0,7,0.26156761532738093) 4%, rgba(7,1,15,1) 78%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#030007",endColorstr="#07010f",GradientType=1);
+  background: rgb(15,16,20);
+  background: -moz-linear-gradient(90deg, rgba(15,16,20,0.8786292837447479) 61%, rgba(251,251,252,0) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(15,16,20,0.8786292837447479) 61%, rgba(251,251,252,0) 100%);
+  background: linear-gradient(90deg, rgba(15,16,20,0.8786292837447479) 61%, rgba(251,251,252,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f1014",endColorstr="#fbfbfc",GradientType=1);
 }
 .next-button{
-  background: rgb(3,0,7);
-  background: -moz-linear-gradient(90deg, rgba(3,0,7,0.26156761532738093) 4%, rgba(7,1,15,1) 78%);
-  background: -webkit-linear-gradient(90deg, rgba(3,0,7,0.26156761532738093) 4%, rgba(7,1,15,1) 78%);
-  background: linear-gradient(90deg, rgba(3,0,7,0.26156761532738093) 4%, rgba(7,1,15,1) 78%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#030007",endColorstr="#07010f",GradientType=1);
+  background: rgb(15,16,20);
+  background: -moz-linear-gradient(270deg, rgba(15,16,20,0.8786292837447479) 61%, rgba(251,251,252,0) 100%);
+  background: -webkit-linear-gradient(270deg, rgba(15,16,20,0.8786292837447479) 61%, rgba(251,251,252,0) 100%);
+  background: linear-gradient(270deg, rgba(15,16,20,0.8786292837447479) 61%, rgba(251,251,252,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f1014",endColorstr="#fbfbfc",GradientType=1);
 }
 
 .carousel-container:hover{
@@ -286,10 +288,24 @@ span{
       padding-left: 5px;
     }
 
+    .items{
+      font-size: 20px !important;
+      margin-top: 10px;
+    }
+    .hori-carousel-container{
+      height: 120px !important;
+    }
+    .hori{
+      margin-top: 0 !important;
+      height: 110% !important;
+    }
     .menubar-item-label{
       visibility: hidden;
     }
 
+    .categories{
+      margin-top: 20px;
+    }
 }
 .hide_menu{
   background-color: #1b1e2b;
@@ -313,34 +329,41 @@ span{
   background-color: black;
 }
 @media screen and (max-width:800px) {
+  
     .video-background{
       margin-left:0px;
       margin-right:0px;
       width: 100% !important;
     }
+
     .top-image{
       width: 340px;
       padding-left: 25px;
       height: 180px;
     }
+
     .desc{
       width: 300px !important;
     }
+
     .brand_logo .desc .top-image .top-content{
       margin-left:0 !important;
     }
+
     .first,.second,.third,.forth{
     width: 150px !important;
     position: relative;
     display: block;
     }
+
     .overlap{
       display: none;
     }
+
     .menu_options{
-      visibility: hidden;
-      
+      visibility: hidden; 
     }
+
     .top_content{
       margin-left: 0 !important;
     }
@@ -394,6 +417,7 @@ span{
 .nav_options{
   display: none;
 }
+
 .brand_logo{
   height: 50px;
   width: 50px;
@@ -412,10 +436,12 @@ span{
 .top-content{
   margin-top:25px ;
 }
+
 h3{
   margin: 0 0;
   font-weight:500;
 }
+
 .info{
   margin: 0 0;
   color: #677d97;
@@ -446,7 +472,8 @@ h3{
   background: -moz-linear-gradient(270deg, rgba(22,24,31,1) 11%, rgba(239,239,239,0) 99%);
   background: -webkit-linear-gradient(270deg, rgba(22,24,31,1) 11%, rgba(239,239,239,0) 99%);
   background: linear-gradient(270deg, rgba(22,24,31,1) 11%, rgba(239,239,239,0) 99%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#16181f",endColorstr="#efefef",GradientType=1);}
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#16181f",endColorstr="#efefef",GradientType=1);
+}
 
 .video-background{
   width: 110%;
@@ -454,8 +481,6 @@ h3{
   position: sticky;
   
 }
-
-
 .social{
   margin-left: 10px;
   margin-right: 40px;
