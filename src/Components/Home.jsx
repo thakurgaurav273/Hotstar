@@ -12,7 +12,7 @@ function Home() {
     <>
       <Navbar/>
       <Menu />
-      <Top title="ICC WTC Final 2023" src="https://shifu.hotstarext.com/SOURCE/VOD/cd-2023-05-29/WTCDated_deskXbb-86b250ab-6af0-4638-8d8d-627fe9415cf8.jpg"/>
+      <Top title="ICC Final World Cup" duration="Explore" description="" buttonText="Explore" src="https://shifu.hotstarext.com/SOURCE/VOD/cd-2023-10-03/CW_LTF_Mashup_PostL_V4_deskXBB-3ffecfee-8e3d-4874-bd2c-58afe427dc4b.jpg"/>
       <Video/>
       <Contents/>
     </>

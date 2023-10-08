@@ -232,7 +232,7 @@ span{
       display: inline-block;
     }
     .categories{
-      margin-left: -8px;
+      margin-left: 10px;
     }
     .top-content{
       padding-top: 60px;
@@ -319,9 +319,9 @@ span{
       width: 100% !important;
     }
     .top-image{
-      width: 400px;
+      width: 340px;
       padding-left: 25px;
-      height: 200px;
+      height: 180px;
     }
     .desc{
       width: 300px !important;
@@ -376,7 +376,7 @@ span{
     }
     .brand-logo{
       position: absolute;
-      top: 0;
+      top: 5px;
       left: -72px;
       height: 35px !important;
       width: 50px;
@@ -384,7 +384,7 @@ span{
     }
     .subscribe{
       position: absolute;
-      top: 22px;
+      top: 28px;
       left: -84px;
       font-size: 13px;
 
@@ -423,6 +423,7 @@ h3{
 
 .detail_of_show{
   margin-left: 25px;
+  width: 350px;
 }
 
 .top-subscribe{

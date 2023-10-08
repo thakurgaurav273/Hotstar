@@ -13,7 +13,8 @@ function Home() {
     <>
       <Navbar/>
       <Menu />
-      <Top title="Exciting Line-Up" src="https://shifu.hotstarext.com/SOURCE/VOD/cd-2023-10-03/CW_LTF_Mashup_PostL_V4_deskXBB-3ffecfee-8e3d-4874-bd2c-58afe427dc4b.jpg"/>
+      <Top title="Disney+ Hotstar" duration="Grab Your Plan Now" description="Why Wait When You Can Enjoy All Rounder Entertaintment!" 
+      buttonText="Subscribe" src="https://shifu.hotstarext.com/SOURCE/VOD/cd-2023-09-12/TheLittleMNSAhsokaNS_deskXBB-a77276f2-04ec-4546-9beb-5e726e42530f.jpg"/>
       <TopCarousel movies-title={TopCarouselFile[0]}/>
       <div className="container">
           <h3 className='categories'>Movies You Watch</h3>

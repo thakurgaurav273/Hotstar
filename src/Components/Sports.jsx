@@ -13,7 +13,9 @@ function Home() {
     <>
       <Navbar/>
       <Menu />
-      <Top title="Exciting Line-Up" src="https://shifu.hotstarext.com/SOURCE/VOD/cd-2023-10-03/CW_LTF_Mashup_PostL_V4_deskXBB-3ffecfee-8e3d-4874-bd2c-58afe427dc4b.jpg"/>
+      <Top title="World Cup 2023" duration="Today - 2PM" description="" 
+      buttonText="Explore" 
+      src="https://shifu.hotstarext.com/SOURCE/VOD/cd-2023-10-03/WC23CDTodayFoM_deskXBB-e6b397be-7583-4350-a514-62e516d6bd73.jpg"/>
       <TopCarousel movies-title={TopCarouselFile[2]}/>
       <div className="container">
           <h3 className='categories'>India at the World Cup</h3>
