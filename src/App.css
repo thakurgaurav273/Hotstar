@@ -6,7 +6,6 @@ body {
 }
 
 
-
 /* for subscribe button  */
 .subscription {
   text-align: center;
@@ -25,7 +24,6 @@ body {
   top: 95px;
   left: 8px;
 }
-
 
 .container{
   margin-top: 15px;
@@ -215,7 +213,7 @@ span{
 
 @media screen and (max-width:800px) {
 
-    .desc{
+    .desc{  
       position: relative;
       left: 0;
       height: inherit;
