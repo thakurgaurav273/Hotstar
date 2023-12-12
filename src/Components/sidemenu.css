@@ -1,0 +1,112 @@
+
+  .close-button{
+    height: 35px;
+    width: 35px;
+    position: fixed;
+    top: 15px;
+    right: 5px;
+    padding: 5px 5px;
+    background-color: rgba(50, 49, 49, 0.3);
+    border: 0;
+    color: white;
+    margin:0 0;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  .hamburger-button{
+    margin: 10px;
+    font-size: 25px;
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    visibility: hidden;
+  }
+  
+  .topNavBar{
+    background-color: rgba(14, 14, 14, 0.8);
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 1000 !important;
+  }
+
+  .side-menu-options{
+    padding: 0 0;
+  }
+  
+  .icons{
+    margin-right: 15px;
+    font-size: 22px;
+  }
+  
+
+  .side-menu-links{
+    margin: 25px 25px;
+  }
+
+  .side-menu-title{
+    margin: 0 0 !important;
+  }
+  
+  .side-menu-item{
+    margin-top: 50px;
+    color: white !important;
+  }
+  
+  .side-heading{
+    text-align: left;
+    padding-left: 15px;
+    color: rgb(205, 209, 212);
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 80px;
+  }
+
+  .topmost-logo{
+    visibility: hidden !important;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+  }
+  .topNavBar{
+    visibility: hidden !important;
+  }
+  .side-menu-container{
+    color: white;
+    background-color: black;
+    width: 180px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding-left: 10px;
+    transition-duration:all .5s;
+    z-index: 500;
+  }
+  
+  .side-menu-container ul{
+    list-style: none;
+  }
+
+  @media screen and (max-width:800px){
+      .hamburger-button{
+        visibility: visible;
+      }
+      .topmost-logo{
+        visibility: visible !important;
+      }
+      .topNavBar{
+        visibility: visible !important;
+      }
+  }
+
+  @media screen and (max-width:1000px) and (min-width:800px) {
+    .topmost-logo{
+        visibility: hidden !important;
+    }
+    .topNavBar{
+      visibility: hidden !important;
+    }
+  }

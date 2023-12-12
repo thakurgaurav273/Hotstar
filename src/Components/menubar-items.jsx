@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../App.css"
 import { Navigate } from "react-router-dom";
-// import Myspace from "./Myspace";
+
 export default function MenubarItem(props) {
     const [clicked,isClicked]=useState(false);
     const [link,setLink]=useState("/");

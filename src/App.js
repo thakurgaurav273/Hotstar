@@ -5,11 +5,14 @@ import Sports from './Components/Sports.jsx';
 import Home from './Components/Home.jsx'
 import TV from './Components/TV.jsx'
 import Search from './Components/Search.jsx'
+import Sidemenu from './Components/Sidemenu.jsx'
 import Movies from './Components/Movies.jsx'
 import Myspace from './Components/Myspace';
 export default function App() {
+  
   return (
     <BrowserRouter>
+          <Sidemenu/>
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/Myspace' element={<Myspace/>} />

@@ -2,7 +2,6 @@ import React from "react";
 import '../App.css';
 import Menu from './menu_bar';
 import Top from './top_content';
-import Navbar from './navbar';
 import Carousel from "./HorizontalCardCarousel";
 import SportsArray from "./SportsSectionFile.jsx"
 import Footer from "./footer";
@@ -11,7 +10,6 @@ import TopCarouselFile from "./TopCarouselFiles"
 function Home() {
   return (
     <>
-      <Navbar/>
       <Menu />
       <Top title="World Cup 2023" duration="Today - 2PM" description="" 
       buttonText="Explore" 
