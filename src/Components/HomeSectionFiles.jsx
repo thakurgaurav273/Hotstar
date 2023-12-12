@@ -175,8 +175,18 @@ const Arr=[
             }
             ,
             {
-                key:9,
-                source:"https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/8020/1098020-v-bc69cf8a251f"
+                key:10,
+                source:"https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/SHOW/467/467/467-v"
+            }
+            ,
+            {
+                key:10,
+                source:"https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/SHOW/316/316/316-v"
+            }
+            ,
+            {
+                key:11,
+                source:"https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/6133/1626133-v-63299843baed"
             }
         ],
         // Celebrate Pride
@@ -210,6 +220,19 @@ const Arr=[
                 source:"https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9474/1249474-v-1c5a59e678c4"
             }
             
+            ,{
+                key:8,
+                source:"https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/SHOW/81/81/81-v"
+            }
+            ,{
+                key:9,
+                source:"https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/SHOW/358/358/358-v"
+            }
+            ,{
+                key:10,
+                source:"https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/2274/572274-v"
+            }
+            
         ],
         // Best in Sports
         [
@@ -237,6 +260,22 @@ const Arr=[
                 key:5,
                 title:"India's Net Session Before WTC Final",
                 source:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/5423/1635423-h-a47332cb5e4b"
+            },
+        
+            {
+                key:6,
+                title:"India's Net Session Before WTC Final",
+                source:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/3148/813148-v"
+            },
+            {
+                key:7,
+                title:"India's Net Session Before WTC Final",
+                source:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/1745/1281745-v-6ee7ff4440f2"
+            },
+            {
+                key:8,
+                title:"India's Net Session Before WTC Final",
+                source:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/608/1160608-v-8680160dd6b2"
             },
         
         ]
@@ -270,6 +309,18 @@ const Arr=[
             {
                 key:7,
                 source:"https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9273/1479273-v-c3a3c07fe35c"
+            },
+            {
+                key:8,
+                source:"https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/9448/1599448-v-d3acc4b37990"
+            },
+            {
+                key:9,
+                source:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/6497/1446497-v-ffb21d244133"
+            },
+            {
+                key:10,
+                source:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/5103/1505103-v-bed8b3a9c490"
             },
         ]
         

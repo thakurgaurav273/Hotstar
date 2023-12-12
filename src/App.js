@@ -9,6 +9,7 @@ import Sidemenu from './Components/Sidemenu.jsx'
 import Movies from './Components/Movies.jsx'
 import Myspace from './Components/Myspace';
 export default function App() {
+  
   return (
     <BrowserRouter>
           <Sidemenu/>

@@ -6,6 +6,7 @@ import Video from './video';
 import Contents from "./Contents";
 
 function Home() {
+  
   return (
     <>
       <Menu />
