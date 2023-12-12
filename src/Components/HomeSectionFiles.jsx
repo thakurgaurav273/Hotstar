@@ -36,6 +36,54 @@ const Arr=[
         , {
         key: 9,
         source: "https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/5845/1605845-v-312b1d33d0f6"
+    },
+    {
+        key:10,
+        source:"https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/4163/1634163-v-770f1a8db9f2"
+    },
+    {
+        key:11,
+        source:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/5577/1635577-v-e1d023e2ce85"
+    }
+    ,
+    {
+        key:12,
+        source:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/123/1630123-v-630effa3819f"
+    }
+    ,
+    {
+        key:13,
+        source:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/8493/1628493-v-cef8f806c01d"
+    }
+    ,
+    {
+        key:14,
+        source:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9736/1629736-v-538fa2b33272"
+    }
+    ,
+    {
+        key:15,
+        source:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/6391/1626391-v-5cdf281dd5f4"
+    }
+    ,
+    {
+        key:16,
+        source:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7115/1627115-v-91d5152e7c5e"
+    }
+    ,
+    {
+        key:17,
+        source:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/6055/1626055-v-7f75a1629123"
+    }
+    ,
+    {
+        key:18,
+        source:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/404/1630404-v-645be96a1ce0"
+    }
+    ,
+    {
+        key:19,
+        source:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/1607/1621607-v-043777102333"
     }
     ],
         // Popular Shows
@@ -66,6 +114,26 @@ const Arr=[
         ,{
             key:7,
             source:"https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/3434/1373434-v-509c9dbd22dc"
+        }
+        ,{
+            key:8,
+            source:"https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/6836/1626836-v-94cf52682493"
+        }
+        ,{
+            key:9,
+            source:"https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/1965/1631965-v-08049296b3e0"
+        }
+        ,{
+            key:10,
+            source:"https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/3229/1423229-v-38316a3e497f"
+        }
+        ,{
+            key:11,
+            source:"https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/8447/1598447-v-036dcb4752de"
+        }
+        ,{
+            key:12,
+            source:"https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/1481/1581481-v-98622d2f5270"
         }
         ],
         // Watch with Family
@@ -99,6 +167,16 @@ const Arr=[
             {
                 key:7,
                 source:"https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7309/177309-v"
+            }
+            ,
+            {
+                key:8,
+                source:"https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/2317/1622317-v-692d642c2fdd"
+            }
+            ,
+            {
+                key:9,
+                source:"https://img10.hotstar.com/image/upload/l_discovery:PP:usp_callouts_on_artwork:Free:Free_Vertical_Eng/c_scale,fl_relative,w_1.0/c_crop,fl_relative,w_1.0,h_1.0/fl_layer_apply/f_auto,q_90,w_384/sources/r1/cms/prod/8020/1098020-v-bc69cf8a251f"
             }
         ],
         // Celebrate Pride
@@ -154,6 +232,11 @@ const Arr=[
                 key:4,
                 title:"India's Net Session Before WTC Final",
                 source:"https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/2023/1532023-h-2daf4bf8c7c2"
+            },
+            {
+                key:5,
+                title:"India's Net Session Before WTC Final",
+                source:"https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/5423/1635423-h-a47332cb5e4b"
             },
         
         ]

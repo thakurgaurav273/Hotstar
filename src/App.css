@@ -54,6 +54,12 @@ body {
   display: flex;
   transition: transform 0.3s ease;
 }
+@media (min-width:1800px)
+ {
+  .carousel{
+    justify-content: center !important;
+  }
+}
 .fa-chevron-left,.fa-chevron-right{
   color: white;
   font-size: 22px;
